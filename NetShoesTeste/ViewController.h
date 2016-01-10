@@ -7,9 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductCollectionViewCell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
+// Array
+@property (strong, nonatomic) NSArray *canaisDicArray;
+
+// CollectionView
+@property (weak, nonatomic) IBOutlet UICollectionView *productsCollectionView;
+
+// CollectionCell
+@property (nonatomic, strong) ProductCollectionViewCell *regularCell;
+
+
+// Methods
+- (void)setCellsConfig;
 
 @end
 

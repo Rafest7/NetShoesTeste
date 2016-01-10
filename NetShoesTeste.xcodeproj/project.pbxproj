@@ -15,8 +15,8 @@
 		778A85861C416950005B66B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778A85841C416950005B66B1 /* LaunchScreen.storyboard */; };
 		778A85911C416950005B66B1 /* NetShoesTesteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A85901C416950005B66B1 /* NetShoesTesteTests.m */; };
 		778A859C1C416950005B66B1 /* NetShoesTesteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A859B1C416950005B66B1 /* NetShoesTesteUITests.m */; };
-		778A85AD1C419C6E005B66B1 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A85AB1C419C6E005B66B1 /* ProductTableViewCell.m */; };
-		778A85AE1C419C6E005B66B1 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778A85AC1C419C6E005B66B1 /* ProductTableViewCell.xib */; };
+		7793D7431C4293CF00690026 /* ProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */; };
+		7793D7441C4293CF00690026 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		778A85971C416950005B66B1 /* NetShoesTesteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetShoesTesteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A859B1C416950005B66B1 /* NetShoesTesteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetShoesTesteUITests.m; sourceTree = "<group>"; };
 		778A859D1C416950005B66B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		778A85AA1C419C6E005B66B1 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
-		778A85AB1C419C6E005B66B1 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
-		778A85AC1C419C6E005B66B1 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		7793D7401C4293CF00690026 /* ProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCollectionViewCell.h; sourceTree = "<group>"; };
+		7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCollectionViewCell.m; sourceTree = "<group>"; };
+		7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +106,8 @@
 		778A85751C416950005B66B1 /* NetShoesTeste */ = {
 			isa = PBXGroup;
 			children = (
-				778A857F1C416950005B66B1 /* Main.storyboard */,
 				778A85841C416950005B66B1 /* LaunchScreen.storyboard */,
+				778A857F1C416950005B66B1 /* Main.storyboard */,
 				778A85791C416950005B66B1 /* AppDelegate.h */,
 				778A857A1C416950005B66B1 /* AppDelegate.m */,
 				778A857C1C416950005B66B1 /* ViewController.h */,
@@ -149,9 +149,9 @@
 		778A85A91C416B50005B66B1 /* Product Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
-				778A85AA1C419C6E005B66B1 /* ProductTableViewCell.h */,
-				778A85AB1C419C6E005B66B1 /* ProductTableViewCell.m */,
-				778A85AC1C419C6E005B66B1 /* ProductTableViewCell.xib */,
+				7793D7401C4293CF00690026 /* ProductCollectionViewCell.h */,
+				7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */,
+				7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */,
 			);
 			name = "Product Custom Cell";
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				778A85861C416950005B66B1 /* LaunchScreen.storyboard in Resources */,
-				778A85AE1C419C6E005B66B1 /* ProductTableViewCell.xib in Resources */,
 				778A85831C416950005B66B1 /* Assets.xcassets in Resources */,
+				7793D7441C4293CF00690026 /* ProductCollectionViewCell.xib in Resources */,
 				778A85811C416950005B66B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,8 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				778A857E1C416950005B66B1 /* ViewController.m in Sources */,
-				778A85AD1C419C6E005B66B1 /* ProductTableViewCell.m in Sources */,
 				778A857B1C416950005B66B1 /* AppDelegate.m in Sources */,
+				7793D7431C4293CF00690026 /* ProductCollectionViewCell.m in Sources */,
 				778A85781C416950005B66B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +522,7 @@
 				778A85A21C416950005B66B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		778A85A31C416950005B66B1 /* Build configuration list for PBXNativeTarget "NetShoesTesteTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +531,7 @@
 				778A85A51C416950005B66B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		778A85A61C416950005B66B1 /* Build configuration list for PBXNativeTarget "NetShoesTesteUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +540,7 @@
 				778A85A81C416950005B66B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

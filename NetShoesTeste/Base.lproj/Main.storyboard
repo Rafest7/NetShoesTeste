@@ -17,20 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-Ua-bTH">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fuC-ea-rp0">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vnc-Rp-PrC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="KAf-Ua-bTH" secondAttribute="trailing" id="2EB-XB-2c9"/>
-                            <constraint firstItem="KAf-Ua-bTH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QpI-PK-1gi"/>
-                            <constraint firstItem="KAf-Ua-bTH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bhq-Nf-NCN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KAf-Ua-bTH" secondAttribute="bottom" id="p1v-8l-SSO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuC-ea-rp0" secondAttribute="bottom" id="F4F-kp-4Mo"/>
+                            <constraint firstAttribute="trailing" secondItem="fuC-ea-rp0" secondAttribute="trailing" id="UlF-HD-Xy5"/>
+                            <constraint firstItem="fuC-ea-rp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0v-fp-fBR"/>
+                            <constraint firstItem="fuC-ea-rp0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eWb-25-O15"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="J5E-Zz-MBm"/>
+                    <connections>
+                        <outlet property="productsCollectionView" destination="fuC-ea-rp0" id="gov-Cj-ka7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +53,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mMs-Y3-2nm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.34901960784313724" green="0.18823529411764706" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
