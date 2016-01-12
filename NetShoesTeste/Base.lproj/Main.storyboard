@@ -38,7 +38,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="J5E-Zz-MBm"/>
                     <connections>
-                        <outlet property="productsCollectionView" destination="fuC-ea-rp0" id="gov-Cj-ka7"/>
+                        <outlet property="productCollectionView" destination="fuC-ea-rp0" id="iyD-6J-8P2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

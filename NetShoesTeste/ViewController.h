@@ -12,13 +12,13 @@
 @interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 // Array
-@property (strong, nonatomic) NSArray *canaisDicArray;
+@property (strong, nonatomic) NSArray *productDicArray;
 
 // CollectionView
-@property (weak, nonatomic) IBOutlet UICollectionView *productsCollectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *productCollectionView;
 
 // CollectionCell
-@property (nonatomic, strong) ProductCollectionViewCell *regularCell;
+@property (nonatomic, strong) ProductCollectionViewCell *estimatedCell;
 
 
 // Methods

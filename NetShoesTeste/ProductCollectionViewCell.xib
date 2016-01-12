@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCollectionViewCell">
             <rect key="frame" x="0.0" y="0.0" width="148" height="240"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="148" height="168"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLw-w4-vnx" userLabel="Sale Label Container View">
-                                <rect key="frame" x="110" y="1" width="27" height="30"/>
+                                <rect key="frame" x="110" y="0.0" width="27" height="30"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow_sale_label" translatesAutoresizingMaskIntoConstraints="NO" id="QNE-bg-DUb">
                                         <rect key="frame" x="0.0" y="0.0" width="27" height="30"/>
@@ -53,11 +53,12 @@
                             </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="rXn-Tv-lIW">
                                 <rect key="frame" x="64" y="74" width="20" height="20"/>
+                                <color key="color" red="0.34901960780000002" green="0.18823529410000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dLw-w4-vnx" firstAttribute="top" secondItem="iHW-kG-pp4" secondAttribute="top" constant="1" id="0jd-iD-0TT"/>
+                            <constraint firstItem="dLw-w4-vnx" firstAttribute="top" secondItem="iHW-kG-pp4" secondAttribute="top" id="0jd-iD-0TT"/>
                             <constraint firstItem="rXn-Tv-lIW" firstAttribute="centerX" secondItem="iHW-kG-pp4" secondAttribute="centerX" id="7Q1-0N-z9u"/>
                             <constraint firstItem="rXn-Tv-lIW" firstAttribute="centerY" secondItem="iHW-kG-pp4" secondAttribute="centerY" id="BXV-VG-sDM"/>
                             <constraint firstItem="tkb-JD-ZJg" firstAttribute="top" secondItem="iHW-kG-pp4" secondAttribute="top" id="K2o-7k-AHq"/>
@@ -79,14 +80,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 800,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-Og-8iR">
-                                <rect key="frame" x="8" y="46" width="62" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 800,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5c-Nm-FY2">
+                                <rect key="frame" x="78" y="46" width="62" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 800,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5c-Nm-FY2">
-                                <rect key="frame" x="78" y="46" width="62" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$ 800,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-Og-8iR">
+                                <rect key="frame" x="8" y="46" width="62" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -103,6 +104,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="3Vy-av-KnC" secondAttribute="bottom" id="39p-dI-0gl"/>
                 <constraint firstAttribute="trailing" secondItem="iHW-kG-pp4" secondAttribute="trailing" id="7Pc-WC-Rn0"/>
@@ -113,6 +115,14 @@
                 <constraint firstItem="iHW-kG-pp4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wpe-XG-nc0"/>
             </constraints>
             <size key="customSize" width="206" height="284"/>
+            <connections>
+                <outlet property="productActIndicator" destination="rXn-Tv-lIW" id="615-vT-YUF"/>
+                <outlet property="productCellThumbnail" destination="tkb-JD-ZJg" id="Ogd-jo-Rpp"/>
+                <outlet property="productDescriptionLabel" destination="pAb-Tg-VDc" id="vjh-LB-9RZ"/>
+                <outlet property="productDiscountPercentageLabel" destination="Unh-qV-Qah" id="MCu-Jc-AqF"/>
+                <outlet property="productOlderPriceLabel" destination="N5c-Nm-FY2" id="Yzb-C5-EvG"/>
+                <outlet property="productPriceLabel" destination="UYh-Og-8iR" id="W6L-q7-Fez"/>
+            </connections>
             <point key="canvasLocation" x="495" y="444"/>
         </collectionViewCell>
     </objects>
