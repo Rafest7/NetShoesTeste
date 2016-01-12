@@ -14,11 +14,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fuC-ea-rp0">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fuC-ea-rp0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vnc-Rp-PrC">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -30,10 +31,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuC-ea-rp0" secondAttribute="bottom" id="F4F-kp-4Mo"/>
-                            <constraint firstAttribute="trailing" secondItem="fuC-ea-rp0" secondAttribute="trailing" id="UlF-HD-Xy5"/>
-                            <constraint firstItem="fuC-ea-rp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d0v-fp-fBR"/>
-                            <constraint firstItem="fuC-ea-rp0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eWb-25-O15"/>
+                            <constraint firstAttribute="trailing" secondItem="fuC-ea-rp0" secondAttribute="trailing" id="E2S-th-eGC"/>
+                            <constraint firstItem="fuC-ea-rp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IU4-Uz-4xH"/>
+                            <constraint firstItem="fuC-ea-rp0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kjt-VT-85g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fuC-ea-rp0" secondAttribute="bottom" id="kad-3o-Ch8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="J5E-Zz-MBm"/>
@@ -50,7 +51,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ONx-kG-Vcb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mMs-Y3-2nm">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="mMs-Y3-2nm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.34901960784313724" green="0.18823529411764706" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>

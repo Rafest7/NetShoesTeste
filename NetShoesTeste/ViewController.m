@@ -22,8 +22,12 @@
     self.productCollectionView.dataSource = self;
     self.productCollectionView.delegate = self;
     
-    // Removing the text from the back button
-    self.navigationController.navigationBar.topItem.title = @"";
+    // Navigation Bar Logo
+    UIImage *img = [UIImage imageNamed:@"netshoes_logo.png"];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 125, 19)];
+    [imgView setImage:img];
+    [imgView setContentMode:UIViewContentModeScaleAspectFit];
+    self.navigationItem.titleView = imgView;
     
     // 
     [self setCellsConfig];
@@ -59,11 +63,8 @@
     [cell fillCellContent:[self.productDicArray objectAtIndex:indexPath.row]];
     
     // Adding border
-    cell.layer.borderWidth = 2.0f;
-    cell.layer.borderColor = [UIColor colorWithRed:100
-                                             green:100
-                                              blue:100
-                                             alpha:1.0].CGColor;
+    cell.layer.borderWidth = 1.0f;
+    cell.layer.borderColor = [UIColor lightGrayColor].CGColor;
     
     return cell;
 }
@@ -100,6 +101,7 @@
     return self.estimatedCell.frame.size;
 }
 
+// Cell selection
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"Selected collection cell: %li", (long)indexPath.row);

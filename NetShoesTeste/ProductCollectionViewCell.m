@@ -14,7 +14,6 @@
     // Initialization code
 }
 
-
 #pragma mark - Method
 - (void)fillCellContent:(NSDictionary*)cellDic
 {
@@ -36,18 +35,15 @@
 //    }
     
     // Filling the content
-    self.productDiscountPercentageLabel.text = @"70%";
+    self.productDiscountPercentageLabel.text = @"-70%";
     self.productDescriptionLabel.text = @"Meia GONEW Running Cano Baixo";
-    self.productPriceLabel.text = @"R$ 800,00";
+    self.productPriceLabel.text = @"R$ 1.500,00";
 
-//    self.productOlderPriceLabel.text = @"R$ 800,00";
-    
+
     NSDictionary* attributes = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
-    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 1500,00"
+    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 1.800,00"
                                                                          attributes:attributes];
     self.productOlderPriceLabel.attributedText = attributedText;
-    
-
     
     
     // Config the image
