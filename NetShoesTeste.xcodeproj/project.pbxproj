@@ -17,6 +17,8 @@
 		778A859C1C416950005B66B1 /* NetShoesTesteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A859B1C416950005B66B1 /* NetShoesTesteUITests.m */; };
 		7793D7431C4293CF00690026 /* ProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */; };
 		7793D7441C4293CF00690026 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */; };
+		779D4C011C4673A00036A939 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779D4C001C4673A00036A939 /* ProductDetailViewController.m */; };
+		A4CC92A2D45C1833C9EB7409 /* libPods-NetShoesTeste.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4269B010EF86FDA1D9DC99 /* libPods-NetShoesTeste.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42F4420475F0E0D578F6320F /* Pods-NetShoesTeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetShoesTeste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetShoesTeste/Pods-NetShoesTeste.debug.xcconfig"; sourceTree = "<group>"; };
+		6E4269B010EF86FDA1D9DC99 /* libPods-NetShoesTeste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetShoesTeste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A85731C416950005B66B1 /* NetShoesTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetShoesTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		778A85771C416950005B66B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		778A85791C416950005B66B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +60,9 @@
 		7793D7401C4293CF00690026 /* ProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductCollectionViewCell.h; sourceTree = "<group>"; };
 		7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductCollectionViewCell.m; sourceTree = "<group>"; };
 		7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		779D4BFF1C4673A00036A939 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		779D4C001C4673A00036A939 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		FD05DB4263305F5511EF234C /* Pods-NetShoesTeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetShoesTeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetShoesTeste/Pods-NetShoesTeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4CC92A2D45C1833C9EB7409 /* libPods-NetShoesTeste.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1134B36EA4322F8BDEC845 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E4269B010EF86FDA1D9DC99 /* libPods-NetShoesTeste.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		778A856A1C416950005B66B1 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,8 @@
 				778A858F1C416950005B66B1 /* NetShoesTesteTests */,
 				778A859A1C416950005B66B1 /* NetShoesTesteUITests */,
 				778A85741C416950005B66B1 /* Products */,
+				9D5014BDFF7DAF600F3FD9DD /* Pods */,
+				2F1134B36EA4322F8BDEC845 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +131,7 @@
 				778A857C1C416950005B66B1 /* ViewController.h */,
 				778A857D1C416950005B66B1 /* ViewController.m */,
 				778A85A91C416B50005B66B1 /* Product Custom Cell */,
+				779D4BFE1C46728E0036A939 /* Product Detail */,
 				778A85821C416950005B66B1 /* Assets.xcassets */,
 				778A85871C416950005B66B1 /* Info.plist */,
 				778A85761C416950005B66B1 /* Supporting Files */,
@@ -156,6 +175,24 @@
 			name = "Product Custom Cell";
 			sourceTree = "<group>";
 		};
+		779D4BFE1C46728E0036A939 /* Product Detail */ = {
+			isa = PBXGroup;
+			children = (
+				779D4BFF1C4673A00036A939 /* ProductDetailViewController.h */,
+				779D4C001C4673A00036A939 /* ProductDetailViewController.m */,
+			);
+			name = "Product Detail";
+			sourceTree = "<group>";
+		};
+		9D5014BDFF7DAF600F3FD9DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42F4420475F0E0D578F6320F /* Pods-NetShoesTeste.debug.xcconfig */,
+				FD05DB4263305F5511EF234C /* Pods-NetShoesTeste.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 778A85A01C416950005B66B1 /* Build configuration list for PBXNativeTarget "NetShoesTeste" */;
 			buildPhases = (
+				548065ED13EF7A3A13E230DC /* Check Pods Manifest.lock */,
 				778A856F1C416950005B66B1 /* Sources */,
 				778A85701C416950005B66B1 /* Frameworks */,
 				778A85711C416950005B66B1 /* Resources */,
+				3B85D7B0E0B767BCE33B3224 /* Embed Pods Frameworks */,
+				4AC0B065933FC9944A624C80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,12 +324,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B85D7B0E0B767BCE33B3224 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetShoesTeste/Pods-NetShoesTeste-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AC0B065933FC9944A624C80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetShoesTeste/Pods-NetShoesTeste-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		548065ED13EF7A3A13E230DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		778A856F1C416950005B66B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				778A857E1C416950005B66B1 /* ViewController.m in Sources */,
+				779D4C011C4673A00036A939 /* ProductDetailViewController.m in Sources */,
 				778A857B1C416950005B66B1 /* AppDelegate.m in Sources */,
 				7793D7431C4293CF00690026 /* ProductCollectionViewCell.m in Sources */,
 				778A85781C416950005B66B1 /* main.m in Sources */,
@@ -431,6 +520,7 @@
 		};
 		778A85A11C416950005B66B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F4420475F0E0D578F6320F /* Pods-NetShoesTeste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -444,6 +534,7 @@
 		};
 		778A85A21C416950005B66B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD05DB4263305F5511EF234C /* Pods-NetShoesTeste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
