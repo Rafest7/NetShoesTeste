@@ -18,6 +18,7 @@
 		7793D7431C4293CF00690026 /* ProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7793D7411C4293CF00690026 /* ProductCollectionViewCell.m */; };
 		7793D7441C4293CF00690026 /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */; };
 		779D4C011C4673A00036A939 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 779D4C001C4673A00036A939 /* ProductDetailViewController.m */; };
+		779D4C421C4737210036A939 /* ProductDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 779D4C411C4737210036A939 /* ProductDetail.storyboard */; };
 		A4CC92A2D45C1833C9EB7409 /* libPods-NetShoesTeste.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4269B010EF86FDA1D9DC99 /* libPods-NetShoesTeste.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		7793D7421C4293CF00690026 /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
 		779D4BFF1C4673A00036A939 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		779D4C001C4673A00036A939 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		779D4C411C4737210036A939 /* ProductDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductDetail.storyboard; sourceTree = "<group>"; };
+		779D4C431C473AB40036A939 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FD05DB4263305F5511EF234C /* Pods-NetShoesTeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetShoesTeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetShoesTeste/Pods-NetShoesTeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +129,7 @@
 			children = (
 				778A85841C416950005B66B1 /* LaunchScreen.storyboard */,
 				778A857F1C416950005B66B1 /* Main.storyboard */,
+				779D4C431C473AB40036A939 /* Constants.h */,
 				778A85791C416950005B66B1 /* AppDelegate.h */,
 				778A857A1C416950005B66B1 /* AppDelegate.m */,
 				778A857C1C416950005B66B1 /* ViewController.h */,
@@ -180,6 +184,7 @@
 			children = (
 				779D4BFF1C4673A00036A939 /* ProductDetailViewController.h */,
 				779D4C001C4673A00036A939 /* ProductDetailViewController.m */,
+				779D4C411C4737210036A939 /* ProductDetail.storyboard */,
 			);
 			name = "Product Detail";
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 				778A85831C416950005B66B1 /* Assets.xcassets in Resources */,
 				7793D7441C4293CF00690026 /* ProductCollectionViewCell.xib in Resources */,
 				778A85811C416950005B66B1 /* Main.storyboard in Resources */,
+				779D4C421C4737210036A939 /* ProductDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
