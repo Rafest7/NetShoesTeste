@@ -9,7 +9,8 @@
 #ifndef Constants_h
 #define Constants_h
 
-#endif /* Constants_h */
+// Service
+#define kProductsListURL @""
 
 // iPhones
 #define screen_size_iPhone_4s [[UIScreen mainScreen] bounds].size.height == 480
@@ -18,3 +19,5 @@
 #define screen_size_iPhone_6Plus [[UIScreen mainScreen] bounds].size.height == 736
 // iPad
 #define screen_size_iPad [[UIScreen mainScreen] bounds].size.height == 1024
+
+#endif /* Constants_h */

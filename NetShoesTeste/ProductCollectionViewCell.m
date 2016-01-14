@@ -7,6 +7,7 @@
 //
 
 #import "ProductCollectionViewCell.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation ProductCollectionViewCell
 
@@ -20,44 +21,37 @@
     // Start activity indicator animation
     [self.productActIndicator startAnimating];
     
-//    // Adjust the labels' size
-//    if(screen_size_iPhone_4s || screen_size_iPhone_5_5s)
-//    {
-//        // Show Category
-//        self.canaisShowCategoryLabel.font = [UIFont systemFontOfSize: 9.5];
-//        self.canaisShowCategoryLabel.textAlignment = NSTextAlignmentLeft;
-//        [self.canaisShowCategoryLabel sizeToFit];
-//        
-//        // Additional Info
-//        self.canaisAdditionalInfoLabel.font = [UIFont systemFontOfSize: 7.5];
-//        self.canaisAdditionalInfoLabel.textAlignment = NSTextAlignmentLeft;
-//        [self.canaisAdditionalInfoLabel sizeToFit];
-//    }
-    
     // Filling the content
-    self.productDiscountPercentageLabel.text = @"-70%";
-    self.productDescriptionLabel.text = @"Meia GONEW Running Cano Baixo";
-    self.productPriceLabel.text = @"R$ 1.500,00";
+//    self.productDiscountPercentageLabel.text = @"-70%";
+    self.productDiscountPercentageLabel.text = [cellDic objectForKey:@""];
+    
+//    self.productDescriptionLabel.text = @"Meia GONEW Running Cano Baixo";
+    self.productDescriptionLabel.text = [cellDic objectForKey:@""];
+    
+//    self.productPriceLabel.text = @"R$ 1.500,00";
+    self.productPriceLabel.text = [cellDic objectForKey:@""];
+    
 
 
     NSDictionary* attributes = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
-    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 1.800,00"
+    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 900,00" // [cellDic objectForKey:@""]
                                                                          attributes:attributes];
     self.productOlderPriceLabel.attributedText = attributedText;
     
     
     // Config the image
-    //    NSString *imgURL = [cellDic objectForKey:@""];
-    //
-    //    [self.canaisCellThumbnail sd_setImageWithURL:[NSURL URLWithString:imgURL]
-    //                                placeholderImage:[UIImage imageNamed:@"placeholder"]
-    //                                       completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-    //                                           // Hide the activity indicator
-    //                                           [self.canaisActIndicator stopAnimating];
-    //                                       }];
+        NSString *imgURL = [cellDic objectForKey:@""];
+    
+        [self.productCellThumbnail sd_setImageWithURL:[NSURL URLWithString:imgURL]
+                                     placeholderImage:[UIImage imageNamed:@"placeholder"]
+                                            completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+                                                // Hide the activity indicator
+                                                [self.productActIndicator stopAnimating];
+          
+                                           }];
     
     // TEMP IMAGE (Deletar isso depois \/)
-    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_test"];
+//    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_test"];
 }
 
 @end
