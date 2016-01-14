@@ -31,10 +31,8 @@
     self.productPriceLabel.text = @"R$ 1.500,00";
 //    self.productPriceLabel.text = [cellDic objectForKey:@""];
     
-
-
     NSDictionary* attributes = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
-    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 900,00" // [cellDic objectForKey:@""]
+    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 3.500,00" // [cellDic objectForKey:@""]
                                                                          attributes:attributes];
     self.productOlderPriceLabel.attributedText = attributedText;
     
@@ -50,7 +48,7 @@
 //    }];
     
     // TEMP IMAGE (Deletar isso depois \/)
-    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_test"];
+    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_meia"];
 }
 
 @end

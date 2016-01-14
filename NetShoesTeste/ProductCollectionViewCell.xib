@@ -17,7 +17,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHW-kG-pp4" userLabel="Thumb Container View">
                         <rect key="frame" x="0.0" y="0.0" width="148" height="168"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_test" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-JD-ZJg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_meia" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-JD-ZJg">
                                 <rect key="frame" x="0.0" y="0.0" width="148" height="168"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLw-w4-vnx" userLabel="Sale Label Container View">
@@ -81,19 +81,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.800,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYh-Og-8iR">
-                                <rect key="frame" x="8" y="48" width="62" height="16"/>
+                                <rect key="frame" x="8" y="48" width="64" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="1iC-uB-KWD"/>
-                                    <constraint firstAttribute="width" constant="62" id="4YQ-fK-Xoh"/>
+                                    <constraint firstAttribute="width" constant="64" id="4YQ-fK-Xoh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 1.800,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5c-Nm-FY2">
-                                <rect key="frame" x="78" y="48" width="62" height="16"/>
+                                <rect key="frame" x="76" y="48" width="64" height="16"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="62" id="TnZ-hh-wGh"/>
+                                    <constraint firstAttribute="width" constant="64" id="TnZ-hh-wGh"/>
                                     <constraint firstAttribute="height" constant="16" id="Wed-7O-jHW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
@@ -139,7 +139,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="thumb_test" width="296" height="336"/>
+        <image name="thumb_meia" width="296" height="336"/>
         <image name="yellow_sale_label" width="50" height="59"/>
     </resources>
 </document>

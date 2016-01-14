@@ -22,6 +22,7 @@
 
 // UILabel
 @property (weak, nonatomic) IBOutlet UILabel *productDiscountPercentageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *productOlderPriceLabel;
 
 // Float
 @property (assign, nonatomic) float scrViewWidth;

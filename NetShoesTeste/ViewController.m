@@ -29,6 +29,9 @@
     [imgView setContentMode:UIViewContentModeScaleAspectFit];
     self.navigationItem.titleView = imgView;
     
+    // Removing the text from the back button
+    self.navigationController.navigationBar.topItem.title = @"";
+    
     // AFNetworking
 //    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
 //    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
@@ -132,6 +135,14 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"Selected collection cell: %li", (long)indexPath.row);
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ProductDetail"
+                                                         bundle:nil];
+    
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"productDetail"];
+    
+    [self.navigationController pushViewController:vc
+                                         animated:YES];
 }
 
 #pragma mark - Methods

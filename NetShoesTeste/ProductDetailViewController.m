@@ -24,6 +24,19 @@
     self.productDiscountPercentageLabel.layer.cornerRadius = 3;
     self.productDiscountPercentageLabel.clipsToBounds = YES;
     
+    // Navigation Bar Logo
+    UIImage *img = [UIImage imageNamed:@"netshoes_logo.png"];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 125, 19)];
+    [imgView setImage:img];
+    [imgView setContentMode:UIViewContentModeScaleAspectFit];
+    self.navigationItem.titleView = imgView;
+    
+    // Fill the older price label (TEMP)
+    NSDictionary* attributes = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
+    NSAttributedString* attributedText = [[NSAttributedString alloc] initWithString:@"R$ 99.999,00"
+                                                                         attributes:attributes];
+    self.productOlderPriceLabel.attributedText = attributedText;
+    
 }
 
 - (void)viewDidLayoutSubviews
@@ -37,9 +50,9 @@
     UIImageView *img2 = [[UIImageView alloc] initWithFrame:CGRectMake(self.scrViewWidth, 0, self.scrViewWidth, self.scrViewHeight)];
     UIImageView *img3 = [[UIImageView alloc] initWithFrame:CGRectMake(self.scrViewWidth*2, 0, self.scrViewWidth, self.scrViewHeight)];
     
-    img1.image = [UIImage imageNamed:@"thumb_test"];
-    img2.image = [UIImage imageNamed:@"thumb_test"];
-    img3.image = [UIImage imageNamed:@"thumb_test"];
+    img1.image = [UIImage imageNamed:@"thumb_tenis"];
+    img2.image = [UIImage imageNamed:@"thumb_tenis"];
+    img3.image = [UIImage imageNamed:@"thumb_tenis"];
     
     [self.productImageScrollView addSubview:img1];
     [self.productImageScrollView addSubview:img2];
