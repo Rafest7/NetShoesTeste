@@ -10,7 +10,9 @@
 #define Constants_h
 
 // Service
-#define kProductsListURL @""
+#define kProductsListURL @"http://www.netshoes.com.br/departamento?Nr=OR(product.productType.displayName:T%C3%AAnis,product.productType.displayName:T%C3%AAnis"
+//#define kProductsListURL @"http://www.netshoes.com.br/departamento?Nr=OR(product.productType.displayName:Tênis,product.productType.displayName:Tênis"
+//#define kProductsListURL @"http://www.netshoes.com.br/departamento?Nr=OR(product.productType.displayName:%@,product.productType.displayName:%@"
 
 // iPhones
 #define screen_size_iPhone_4s [[UIScreen mainScreen] bounds].size.height == 480

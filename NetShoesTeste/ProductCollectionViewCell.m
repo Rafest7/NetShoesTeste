@@ -22,14 +22,14 @@
     [self.productActIndicator startAnimating];
     
     // Filling the content
-//    self.productDiscountPercentageLabel.text = @"-70%";
-    self.productDiscountPercentageLabel.text = [cellDic objectForKey:@""];
+    self.productDiscountPercentageLabel.text = @"-70%";
+//    self.productDiscountPercentageLabel.text = [cellDic objectForKey:@""];
     
-//    self.productDescriptionLabel.text = @"Meia GONEW Running Cano Baixo";
-    self.productDescriptionLabel.text = [cellDic objectForKey:@""];
+    self.productDescriptionLabel.text = @"Meia GONEW Running Cano Baixo";
+//    self.productDescriptionLabel.text = [cellDic objectForKey:@""];
     
-//    self.productPriceLabel.text = @"R$ 1.500,00";
-    self.productPriceLabel.text = [cellDic objectForKey:@""];
+    self.productPriceLabel.text = @"R$ 1.500,00";
+//    self.productPriceLabel.text = [cellDic objectForKey:@""];
     
 
 
@@ -40,18 +40,17 @@
     
     
     // Config the image
-        NSString *imgURL = [cellDic objectForKey:@""];
-    
-        [self.productCellThumbnail sd_setImageWithURL:[NSURL URLWithString:imgURL]
-                                     placeholderImage:[UIImage imageNamed:@"placeholder"]
-                                            completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-                                                // Hide the activity indicator
-                                                [self.productActIndicator stopAnimating];
-          
-                                           }];
+//    NSString *imgURL = [cellDic objectForKey:@""];
+//    
+//    [self.productCellThumbnail sd_setImageWithURL:[NSURL URLWithString:imgURL]
+//                                 placeholderImage:[UIImage imageNamed:@"placeholder"]
+//                                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+//                                            // Hide the activity indicator
+//                                            [self.productActIndicator stopAnimating];
+//    }];
     
     // TEMP IMAGE (Deletar isso depois \/)
-//    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_test"];
+    self.productCellThumbnail.image = [UIImage imageNamed:@"thumb_test"];
 }
 
 @end

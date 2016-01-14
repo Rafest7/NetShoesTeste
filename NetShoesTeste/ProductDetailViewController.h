@@ -7,7 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
-@interface ProductDetailViewController : UIViewController
+@interface ProductDetailViewController : UIViewController <UIScrollViewDelegate>
+
+// UIView
+@property (weak, nonatomic) IBOutlet UIView *imageContainerView;
+
+// UIScrollView
+@property (weak, nonatomic) IBOutlet UIScrollView *productImageScrollView;
+
+// UIPageControl
+@property (weak, nonatomic) IBOutlet UIPageControl *pgControl;
+
+// UILabel
+@property (weak, nonatomic) IBOutlet UILabel *productDiscountPercentageLabel;
+
+// Float
+@property (assign, nonatomic) float scrViewWidth;
+@property (assign, nonatomic) float scrViewHeight;
+
+// Constraint
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imgContainerConstraint;
+
+
+// Method
+- (void)updateConstraint;
 
 @end

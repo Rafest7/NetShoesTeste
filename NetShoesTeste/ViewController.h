@@ -14,7 +14,7 @@
 @interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 // Array
-@property (strong, nonatomic) NSArray *productDicArray;
+@property (strong, nonatomic) NSArray *productArray;
 
 // CollectionView
 @property (weak, nonatomic) IBOutlet UICollectionView *productCollectionView;

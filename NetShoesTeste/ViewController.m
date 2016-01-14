@@ -29,7 +29,34 @@
     [imgView setContentMode:UIViewContentModeScaleAspectFit];
     self.navigationItem.titleView = imgView;
     
-    // 
+    // AFNetworking
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+//    
+//    /* -------------------------- New part for Netshoes -------------------------------- */
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];    
+//    [manager.requestSerializer setValue:@"Netshoes App" forHTTPHeaderField:@"User-Agent"];
+//    /* -------------------------------------------------------------------------------------------------------------- */
+//    
+//    [manager GET:kProductsListURL parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject)
+//    {
+//        NSString* stringResponse = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        NSError *jsonError;
+//        NSData *objectData = [stringResponse dataUsingEncoding:NSUTF8StringEncoding];
+//        self.productArray = [NSJSONSerialization JSONObjectWithData:objectData
+//                                                            options:NSJSONReadingMutableContainers
+//                                                              error:&jsonError];
+//        
+//        NSLog(@"%@", self.productArray);
+//        [self.productCollectionView reloadData];
+//        
+//    }
+//    failure:^(AFHTTPRequestOperation *operation, NSError *error)
+//    {
+//        NSLog(@"Error: %@", error.localizedDescription);
+//    }];
+    
+    // Cells config
     [self setCellsConfig];
 }
 
@@ -46,7 +73,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-//    return self.productDicArray.count;
+//    return self.productArray.count;
     return 16;
 }
 
@@ -60,7 +87,7 @@
                                                                                 forIndexPath:indexPath];
     
     // Fill content
-    [cell fillCellContent:[self.productDicArray objectAtIndex:indexPath.row]];
+    [cell fillCellContent:[self.productArray objectAtIndex:indexPath.row]];
     
     // Adding border
     cell.layer.borderWidth = 1.0f;
