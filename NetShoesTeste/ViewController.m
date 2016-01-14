@@ -59,7 +59,7 @@
 //        NSLog(@"Error: %@", error.localizedDescription);
 //    }];
     
-    // Cells config
+    // Calling the cell's config
     [self setCellsConfig];
 }
 
@@ -79,8 +79,6 @@
 //    return self.productArray.count;
     return 16;
 }
-
-/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -148,15 +146,13 @@
 #pragma mark - Methods
 - (void)setCellsConfig
 {
-    /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
     // Register Class
     [self.productCollectionView registerClass:[ProductCollectionViewCell class] forCellWithReuseIdentifier:@"ProductCell"];
     
     // Register Xib
     [self.productCollectionView registerNib:[UINib nibWithNibName:@"ProductCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"ProductCell"];
-    /* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
     
-    
+    // Cell's spacing adjustments
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     flow.scrollDirection = UICollectionViewScrollDirectionVertical;
     flow.minimumInteritemSpacing = 8;
